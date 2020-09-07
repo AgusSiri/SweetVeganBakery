@@ -326,6 +326,8 @@ ul {
 .productos-total {
 	position: relative;
 	padding: 0%;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .producto-bloque {
@@ -333,10 +335,10 @@ ul {
     display: inline-block;
 	vertical-align: middle;
 	.carousel-inner {
-		width: 100%;
+		max-width: 100%;
 	}
 	.carousel-item {
-		width: 100%;
+		max-width: 100%;
 	}
 	li {
 		text-transform: uppercase;
@@ -358,7 +360,7 @@ ul {
 }
 
 .only-responsive {
-	display: none;
+	display: none !important;
 }
 
 

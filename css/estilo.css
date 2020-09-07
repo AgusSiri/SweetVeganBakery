@@ -247,16 +247,18 @@ ul .submenu2 {
 /***PRODUCTOS***/
 .productos-total {
   position: relative;
-  padding: 0%; }
+  padding: 0%;
+  margin-right: 0px;
+  margin-left: 0px; }
 
 .producto-bloque {
   padding-bottom: 0%;
   display: inline-block;
   vertical-align: middle; }
   .producto-bloque .carousel-inner {
-    width: 100%; }
+    max-width: 100%; }
   .producto-bloque .carousel-item {
-    width: 100%; }
+    max-width: 100%; }
   .producto-bloque li {
     text-transform: uppercase;
     font-size: 14px; }
@@ -274,7 +276,7 @@ ul .submenu2 {
   padding-bottom: 0%; }
 
 .only-responsive {
-  display: none; }
+  display: none !important; }
 
 /***LOCALES***/
 .bloque-direcciones-total {
