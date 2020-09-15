@@ -38,81 +38,96 @@
 							<a href="https://www.instagram.com/sweetveganbakery/"><img class="logosredes" src="multimedia/logoig.png" alt="instagram">
 							</a>
 						</li>
+						<li class="logoresponsive"><img src="multimedia/crownBakery.png" alt="logo">
+						</li>
 					</ul>
 				</section> 
 		</div>
-
-		<div class="container-fluid">
-				<section id="videofondo">
-					<div>
-					<video loop muted autoplay preload="auto">
-					<source src="multimedia/presentacion.webm" type="video/webm">
-					</video>
-					</div>
-				</section>
-		</div>
-
-		<div class="container-fluid">
-			<nav class="menunav">
-				<ul class="menu1">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="nosotros.html">Nosotros</a></li>
-					<li class="subMenuProductos"><a href="menu.html">Productos</a>
-						<ul class="submenu">
-							<li><a href="menu.html">muffins & trufas</a></li>
-							<li><a href="menu.html">panificados & facturas </a></li>
-							<li><a href="menu.html">tortas</a></li>
-							<li><a href="menu.html">macarons</a></li>
-							<li><a href="menu.html">mermeladas</a></li>
-						</ul>
-					</li>
-					<li class="logo"><img src="multimedia/crownBakery.png" alt="logo"></li>
-					<li><a href="Locales.html">Locales</a></li>
-					<li><a href="novedades.html">Novedades</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-
-					<div id="fraseprincipal">
-						<h1 class= "animate__animated animate__rotateInUpRight">
-							¡Bienvenidos a Sweet Vegan Bakery!
-						</h1>
-					</div>
-					<section class="descargamenu">
-						<p class="descarga"><a href="multimedia/menusweet.pdf">NUESTRA CARTA</a></p>
-					</section> 
-				</ul>
+		<div class="menuuno">
+			<nav class="navbar navbar-expand-sm navbar-expand-lg navbar-dark bg-black">
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="navigation">
+				   
+				  <span class="navbar-toggler-icon "></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link active" href="nosotros.html">Nosotros</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link active" href="menu.html">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="Locales.html">Locales</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
+
+	
+
+		<!--<div class="container-fluid">
+			<section class="bienvenidos">
+				<section class="logo"><img src="multimedia/crownBakery.png" alt="logo"></section> 
+				<section class="fraseprincipal">
+				<h1 class="animate__animated animate__rotateInUpRight">¡Bienvenidos a Sweet Vegan Bakery!</h1>
+				</section>
+				<section class="descargamenu">
+					<p class="descarga"><a href="multimedia/menusweet.pdf">NUESTRA CARTA</a></p>
+				</section>
+			</section>
+		</div>-->
 	</header>
 
-	<section class="parrafoempresa">
-		<div class="container-fluid">
-			<main class="infoempresa">
-				<p class="infoempresa">
-					Nuestra propuesta gastronómica se basa en la utilización de materias primas de origen vegetal, 
-					con el fin de respetar a todos los seres vivos y al medio ambiente. 
-					Los productos son de primera calidad, frescos, sin aditivos ni corsenvantes y elaborados en el día. 
-					¡Te invitamos a comprobar que se puede comer rico sin explotación animal!
-				</p>
-			</main>
-			
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-3">
-						<img class="iniciofoto" src="multimedia/muffin.png" alt="Muffin">
-					</div>
-					<div class="col-lg-3 col-3">
-						<img class="iniciofoto" src="multimedia/panes.png" alt="Panificados">
-					</div>
-					<div class="col-lg-3 col-3">
-						<img class="iniciofoto" src="multimedia/torta.png" alt="Torta">
-					</div>
-					<div class="col-lg-3 col-3">
-						<img class="iniciofoto" src="multimedia/croissant.png" alt="Facturas">
-					</div>
-				</div>
+	<div class="container-fluid bienvenidos">	
+		<section class="logo">
+			<img src="multimedia/crownBakery.png" alt="logo">
+		</section> 
+
+		<section class="fraseprincipal">
+			<h1 class="animate__animated animate__rotateInUpRight">¡Bienvenidos a Sweet Vegan Bakery!</h1>
+		</section>
+
+		<section class="descargamenu">
+			<p class="descarga"><a href="multimedia/menusweet.pdf">NUESTRA CARTA</a></p>
+		</section>
+	</div>
+
+	<div class="container-fluid">
+		<section id="videofondo">
+			<div>
+			<video loop muted autoplay preload="auto">
+			<source src="multimedia/presentacion.webm" type="video/webm">
+			</video>
 			</div>
-		</div>
-    </section>
+		</section>	
+	</div>
+
+	<div class="container-fluid parrafoempresa">
+		<main class="infoempresa">
+			<p>
+				Nuestra propuesta gastronómica se basa en la utilización de materias primas de origen vegetal, 
+				con el fin de respetar a todos los seres vivos y al medio ambiente. 
+				Los productos son de primera calidad, frescos, sin aditivos ni corsenvantes y elaborados en el día. 
+				¡Te invitamos a comprobar que se puede comer rico sin explotación animal!
+			</p>
+			<div class="iniciofoto">
+				<img src="multimedia/muffin.png" alt="Muffin">			
+				<img src="multimedia/panes.png" alt="Panificados">
+				<img src="multimedia/torta.png" alt="Torta">				
+				<img src="multimedia/croissant.png" alt="Facturas">	
+			</div>
+	    </main>
+	</div>
+
 
 	<footer class="footer-distributed">
  
@@ -170,3 +185,27 @@
 	<script src="js/bootstrap.min.js"></script> 
 </body>
 </html>
+		<!-- <section class="menunav">
+			<nav class="menunav">
+				<ul class="menu1">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li class="subMenuProductos"><a href="menu.html">Productos</a>
+					</li>
+					<li class="logo"><img src="multimedia/crownBakery.png" alt="logo"></li>
+					<li><a href="Locales.html">Locales</a></li>
+					<li><a href="novedades.html">Novedades</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<div class="container-fluid">
+					<div id="fraseprincipal">
+						<h1 class= "animate__animated animate__rotateInUpRight">
+							¡Bienvenidos a Sweet Vegan Bakery!
+						</h1>
+					</div>
+					<section class="descargamenu">
+						<p class="descarga"><a href="multimedia/menusweet.pdf">NUESTRA CARTA</a></p>
+					</section> 
+					</div>
+				</ul>
+			</nav>
+		</section>> -->

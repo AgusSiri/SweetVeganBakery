@@ -1,5 +1,5 @@
 $pink: #fc9d9d;
-$beige: #ffcac2;
+$black: black;
 $brown: #ccafaf;
 $title-font: 'Dancing Script', cursive;
 $text-font: 'EB Garamond', serif;
@@ -24,7 +24,7 @@ a {
 }
 
 .only-responsive {
-	display: none !important;
+	display: none;
 }
 
 .only-desktop {
@@ -56,7 +56,7 @@ a {
 /***BODY***/
 
 .bodyinicio {
-	background-color: $beige;
+	background-color: $black;
 	margin: 0;
 	padding: 0;
 	background-size:100% 100%;
@@ -77,7 +77,8 @@ a {
 /***SECTIONREDES***/
 
 #logoredesdiv {
-	background-color: $pink;
+	background: rgb(255,130,130);
+	background: linear-gradient(0deg, rgba(255,130,130,1) 0%, rgba(252,157,157,1) 59%);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -87,151 +88,47 @@ a {
 		list-style: none;
 		display: inline-block;
 		margin: 0;
+		img {
+			width: 25px;
+			height: 25px;
+			margin-right: 3px;
+			margin-left: 10px;
+			margin-top: 10px;
+			transition: all 2s;
+		}
+	}
+	.logoresponsive {
+		display: none;
 	}
 }
-.logosredes1 {
-	img {
-		width: 25px;
-		height: 25px;
-		margin-right: 3px;
-		margin-left: 10px;
-		margin-top: 10px;
-		transition: all 2s;
-	}
-}
+
 
 /***NAV***/
 
-nav {
-	display: flex;	
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-}
-.menunav {
-	ul {
-		list-style: none;
-		top: 45px;
-		z-index: 100;
-		position: absolute;
-		flex-basis: 40px;
-		padding: 40px 150px 40px;
-	}
-}
-.menu1 {
-	>li {
-		display: inline-block;
-		position: relative;
-		>a {
-			display: block;
-			padding: 30px 30px;
-			color: white;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-family: $nav-font;
-			font-size: 18px;
-		}
-	}
-	li {
-		a {
-			&:hover {
-				color: grey;
-				transition: all .3s;
-			}
-		}
-	}
-}
-ul {
-	.submenu {
-		position: absolute;
-		display: none;
-	}
-	ul {
-		li {
-			display: block;
-			display: block;
-			a {
-				text-decoration: none;
-				font-size: 15px;
-				color: black;
-				text-transform: uppercase;
-				line-height: 20px;
-				text-decoration: none;
-				font-family: $nav-font;
-			}
-		}
-	}
-	li {
-		&:hover {
-			ul {
-				display: block;
-				background-color: rgba(249, 234, 232,0.9);
-				padding: 20px 50px 20px;
-				display: block;
-				color: black;
-			}
-		}
-	}
-	.submenu2 {
-		position: absolute;
-		display: none;
-	}
-}
-.logo {
-	img {
-		position: relative;
-		top: 10px;
-		width: 120px;
-		height: 120px;
-		transition: all 2s;
-		&:hover {
-			width: 130px;
-			height: 130px;
-		}
-	}
-}
-
-.menunav2 {
-	background-color: rgba(0, 0, 0, 0.8);
-	height: 150px;
-	width: 100%;
-	margin-right: 0px;
-	margin-left: 0px;
+.menuuno {
 	display: flex;
 	flex-wrap: nowrap;
-	>ul {
-
-		position: relative;
-		list-style: none;
-		padding: 0px 50px 10px;
-	}
-}
-
-.menu3 {
-	li {
-		display: inline-block;
-		position: relative;
-		a {
-			&:hover {
-				color: grey;
-				transition: all .3s;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	ul {
+		font-family: $nav-font;
+		font-size: 20px;
+		li {
+			a {
+				display: block;
+				padding: 30px 30px;
+				color: white;
+				text-transform: uppercase;
+				&:hover {
+					color: grey;
+					transition: all .3s;
+				}
 			}
 		}
 	}
-	>li {
-		>a {
-			display: block;
-			padding: 5px 30px;
-			color: white;
-			font-size: 18px;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-family: $nav-font;
-		}
-	}
 }
+
 
 /***BIENVENIDOS***/
 
@@ -242,83 +139,101 @@ ul {
 		width: 100%;
 		height: 100%;
 		z-index: 1;
+		margin-bottom: 0%;
 	}
-	padding-bottom: 0%;
 }
 
-#fraseprincipal {
-	position: relative;
-	h1 {
-		color: white;
-		font-size: 95px;
-		text-shadow: 2px 2px 2px black;
-		font-family: $title-font;
+.bienvenidos { 
+	z-index: 500;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+
+	.logo{
+		img {
+			position: relative;
+			top: 60px;
+			width: 140px;
+			height: 140px;
+			transition: all 2s;
+			&:hover {
+				width: 160px;
+				height: 160px;
+			}
+		}
+
+	}
+	.fraseprincipal {
+		h1 {
+			color: white;
+			font-size: 95px;
+			text-shadow: 2px 2px 2px black;
+			font-family: $title-font;
+			text-align: center;
+			width: 1000px;
+			padding: 20px 20px;
+			margin-top: 60px;
+		}
+	}
+	.descargamenu {
+		position: relative;
 		text-align: center;
-		width: 1000px;
-		padding: 20px 20px;
-		z-index: 100;
-		margin-top: 80px;
+		background: rgb(255,130,130);
+		background: linear-gradient(0deg, rgba(255,130,130,1) 0%, rgba(252,157,157,1) 59%);
+		border: 2px dotted white;
+		border-radius: 6px 6px 6px 6px;
+		width: 250px;
+		margin-top: 10px;
+		padding-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-}
-.descargamenu {
-	position: relative;
-	text-align: center;
-	background-color: $pink; 
-	border: 2px dotted white;
-	width: 250px;
-	padding-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.descarga {
-	a {
-		text-decoration: none;
-		color: white;
-		font-size: 20px;
-		letter-spacing: 2px;
-		font-family: $nav-font;
-		&:hover {
-			color: $brown;
-			transition: all .3s;
+	.descarga {
+		a {
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			letter-spacing: 2px;
+			font-family: $nav-font;
+			&:hover {
+				color: $brown;
+				transition: all .3s;
+			}
 		}
 	}
 }
 
 .parrafoempresa {
-	.container-fluid{
-		background-image: url(../multimedia/solapa.png); 
-		background-repeat: no-repeat;
-		background-position: center;
-		text-align: center;
-		margin: auto;
-		margin-top: 0px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		height: 800px;
-		width: 1080;
+	background-image: url(../multimedia/solapa.png); 
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 800px;
+	width: 1080;
 		.infoempresa {
 			text-align: center;
-			position: relative;
+			position: absolute;
 			p {
-				font-family: $text-font;
-				font-size: 30px;
-				color: $brown;
-				margin-right: 300px;
-				margin-left: 300px;
-				margin-top: 40px;
+			font-family: $text-font;
+			font-size: 30px;
+			color: $brown;
+			margin-right: 300px;
+			margin-left: 300px;
+			margin-top: 40px;
 			}
 		}
-		.row {
-			img {
-				position: relative;
-				margin-right: 10px;
-				margin-left: 10px;
-				width: 200px;
-				height: 200px;
-			}
+		img {
+			position: relative;
+			width: 200px;
+			height: 200px;
 		}
-    }
 }
 /***NOSOTROS***/
 
@@ -390,8 +305,19 @@ ul {
 		text-shadow: 4px 4px 4px black;
 	}
 }
-
-/***NOVEDADES***/
+.map-container-2{
+	overflow:hidden;
+	position:relative;
+	height:0;
+	height: 100%;
+	width: 100%;
+}
+.map-container-2 iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+}
 
 /***CONTACTO***/
 .contacto {
@@ -399,7 +325,7 @@ ul {
 		color: $brown;
 		font-size: 60px;
 		font-family: $title-font;
-		text-shadow: 2px 2px 2px $beige;
+		text-shadow: 2px 2px 2px $black;
 		text-align: center;
 		width: 1000px;
 		margin: 10px auto;
@@ -412,7 +338,7 @@ form{
 	border-radius:10px;
 	margin: auto;
 	margin-bottom: 100px;
-	background-color: $beige;
+	background-color: $black;
 	legend{
 		font-family: $text-font;
 		text-align: center;
@@ -515,7 +441,7 @@ footer {
 				line-height: 2;
 			}
 			a {
-				color: $beige;
+				color: $pink;
 				text-decoration: none;
 			}
 		}
@@ -546,14 +472,14 @@ footer {
 		}
 	}
 	.footer-company-name {
-		color: $beige;
+		color: $pink;
 		font-size: 14px;
 		font-weight: normal;
 		margin: 0;
 	}
 	.footer-company-about {
 		line-height: 20px;
-		color: $beige;
+		color: $pink;
 		font-size: 13px;
 		font-weight: normal;
 		margin: 0;
@@ -572,7 +498,7 @@ footer {
 			width: 35px;
 			height: 35px;
 			cursor: pointer;
-			background-color: $beige;
+			background-color: $pink;
 			border-radius: 2px;
 			font-size: 20px;
 			color: #ffffff;
@@ -632,6 +558,10 @@ footer {
 }
 
 @media (max-width: 640px) {
+	header .menunav {
+		display: none!important;
+	}
+
 	.logosredes1 {
 		img {
 			width: 15px;

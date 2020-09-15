@@ -13,7 +13,7 @@ a {
   text-align: center; }
 
 .only-responsive {
-  display: none !important; }
+  display: none; }
 
 .only-desktop {
   display: inherit; }
@@ -36,7 +36,7 @@ a {
 
 /***BODY***/
 .bodyinicio {
-  background-color: #ffcac2;
+  background-color: black;
   margin: 0;
   padding: 0;
   background-size: 100% 100%; }
@@ -54,7 +54,8 @@ a {
 
 /***SECTIONREDES***/
 #logoredesdiv {
-  background-color: #fc9d9d;
+  background: #ff8282;
+  background: linear-gradient(0deg, #ff8282 0%, #fc9d9d 59%);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -64,127 +65,63 @@ a {
     list-style: none;
     display: inline-block;
     margin: 0; }
-
-.logosredes1 img {
-  width: 25px;
-  height: 25px;
-  margin-right: 3px;
-  margin-left: 10px;
-  margin-top: 10px;
-  transition: all 2s; }
+    #logoredesdiv .logosredes1 img {
+      width: 25px;
+      height: 25px;
+      margin-right: 3px;
+      margin-left: 10px;
+      margin-top: 10px;
+      transition: all 2s; }
+  #logoredesdiv .logoresponsive {
+    display: none; }
 
 /***NAV***/
-nav {
+.menuuno {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  .menuuno ul {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px; }
+    .menuuno ul li a {
+      display: block;
+      padding: 30px 30px;
+      color: white;
+      text-transform: uppercase; }
+      .menuuno ul li a:hover {
+        color: grey;
+        transition: all .3s; }
+
+/***BIENVENIDOS***/
+#videofondo video {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-bottom: 0%; }
+
+.bienvenidos {
+  z-index: 500;
+  position: absolute;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
   align-items: center;
-  align-content: stretch; }
-
-.menunav ul {
-  list-style: none;
-  top: 45px;
-  z-index: 100;
-  position: absolute;
-  flex-basis: 40px;
-  padding: 40px 150px 40px; }
-
-.menu1 > li {
-  display: inline-block;
-  position: relative; }
-  .menu1 > li > a {
-    display: block;
-    padding: 30px 30px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px; }
-
-.menu1 li a:hover {
-  color: grey;
-  transition: all .3s; }
-
-ul .submenu {
-  position: absolute;
-  display: none; }
-
-ul ul li {
-  display: block;
-  display: block; }
-  ul ul li a {
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    text-transform: uppercase;
-    line-height: 20px;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif; }
-
-ul li:hover ul {
-  display: block;
-  background-color: rgba(249, 234, 232, 0.9);
-  padding: 20px 50px 20px;
-  display: block;
-  color: black; }
-
-ul .submenu2 {
-  position: absolute;
-  display: none; }
-
-.logo img {
-  position: relative;
-  top: 10px;
-  width: 120px;
-  height: 120px;
-  transition: all 2s; }
-  .logo img:hover {
-    width: 130px;
-    height: 130px; }
-
-.menunav2 {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 150px;
-  width: 100%;
-  margin-right: 0px;
-  margin-left: 0px;
-  display: flex;
-  flex-wrap: nowrap; }
-  .menunav2 > ul {
+  align-content: center;
+  justify-content: center; }
+  .bienvenidos .logo img {
     position: relative;
-    list-style: none;
-    padding: 0px 50px 10px; }
-
-.menu3 li {
-  display: inline-block;
-  position: relative; }
-  .menu3 li a:hover {
-    color: grey;
-    transition: all .3s; }
-
-.menu3 > li > a {
-  display: block;
-  padding: 5px 30px;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif; }
-
-/***BIENVENIDOS***/
-#videofondo {
-  padding-bottom: 0%; }
-  #videofondo video {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    z-index: 1; }
-
-#fraseprincipal {
-  position: relative; }
-  #fraseprincipal h1 {
+    top: 60px;
+    width: 140px;
+    height: 140px;
+    transition: all 2s; }
+    .bienvenidos .logo img:hover {
+      width: 160px;
+      height: 160px; }
+  .bienvenidos .fraseprincipal h1 {
     color: white;
     font-size: 95px;
     text-shadow: 2px 2px 2px black;
@@ -192,54 +129,50 @@ ul .submenu2 {
     text-align: center;
     width: 1000px;
     padding: 20px 20px;
-    z-index: 100;
-    margin-top: 80px; }
+    margin-top: 60px; }
+  .bienvenidos .descargamenu {
+    position: relative;
+    text-align: center;
+    background: #ff8282;
+    background: linear-gradient(0deg, #ff8282 0%, #fc9d9d 59%);
+    border: 2px dotted white;
+    border-radius: 6px 6px 6px 6px;
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+  .bienvenidos .descarga a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif; }
+    .bienvenidos .descarga a:hover {
+      color: #ccafaf;
+      transition: all .3s; }
 
-.descargamenu {
-  position: relative;
-  text-align: center;
-  background-color: #fc9d9d;
-  border: 2px dotted white;
-  width: 250px;
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.descarga a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif; }
-  .descarga a:hover {
-    color: #ccafaf;
-    transition: all .3s; }
-
-.parrafoempresa .container-fluid {
+.parrafoempresa {
   background-image: url(../multimedia/solapa.png);
   background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  margin: auto;
+  background-position: 50% 0%;
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   height: 800px;
   width: 1080; }
-  .parrafoempresa .container-fluid .infoempresa {
+  .parrafoempresa .infoempresa {
     text-align: center;
-    position: relative; }
-    .parrafoempresa .container-fluid .infoempresa p {
+    position: absolute; }
+    .parrafoempresa .infoempresa p {
       font-family: "EB Garamond", serif;
       font-size: 30px;
       color: #ccafaf;
       margin-right: 300px;
       margin-left: 300px;
       margin-top: 40px; }
-  .parrafoempresa .container-fluid .row img {
+  .parrafoempresa img {
     position: relative;
-    margin-right: 10px;
-    margin-left: 10px;
     width: 200px;
     height: 200px; }
 
@@ -300,13 +233,25 @@ ul .submenu2 {
     color: white;
     text-shadow: 4px 4px 4px black; }
 
-/***NOVEDADES***/
+.map-container-2 {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  height: 100%;
+  width: 100%; }
+
+.map-container-2 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%; }
+
 /***CONTACTO***/
 .contacto h1 {
   color: #ccafaf;
   font-size: 60px;
   font-family: "Dancing Script", cursive;
-  text-shadow: 2px 2px 2px #ffcac2;
+  text-shadow: 2px 2px 2px black;
   text-align: center;
   width: 1000px;
   margin: 10px auto;
@@ -318,7 +263,7 @@ form {
   border-radius: 10px;
   margin: auto;
   margin-bottom: 100px;
-  background-color: #ffcac2; }
+  background-color: black; }
   form legend {
     font-family: "EB Garamond", serif;
     text-align: center;
@@ -412,7 +357,7 @@ footer {
         font-size: 14px;
         line-height: 2; }
       .footer-distributed .footer-center p a {
-        color: #ffcac2;
+        color: #fc9d9d;
         text-decoration: none; }
   .footer-distributed .footer-right {
     display: inline-block;
@@ -435,13 +380,13 @@ footer {
       text-decoration: none;
       color: inherit; }
   .footer-distributed .footer-company-name {
-    color: #ffcac2;
+    color: #fc9d9d;
     font-size: 14px;
     font-weight: normal;
     margin: 0; }
   .footer-distributed .footer-company-about {
     line-height: 20px;
-    color: #ffcac2;
+    color: #fc9d9d;
     font-size: 13px;
     font-weight: normal;
     margin: 0; }
@@ -458,7 +403,7 @@ footer {
       width: 35px;
       height: 35px;
       cursor: pointer;
-      background-color: #ffcac2;
+      background-color: #fc9d9d;
       border-radius: 2px;
       font-size: 20px;
       color: #ffffff;
@@ -493,6 +438,8 @@ footer {
       .footer-distributed .footer-distributed .piedepagina > footer > p {
         font-size: 8px; } }
   @media (max-width: 640px) {
+    .footer-distributed header .menunav {
+      display: none !important; }
     .footer-distributed .logosredes1 img {
       width: 15px;
       height: 15px;
