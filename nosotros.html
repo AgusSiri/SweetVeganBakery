@@ -24,111 +24,156 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
-<body>	
+<body class="bodynosotros">	
 	<header>
-		<div id="logoredesdiv">
-			<ul>
-				<li class="logosredes1">
-					<a href="https://www.facebook.com/agus.sirii/"><img class="logosredes" src="multimedia/logosredes.png" alt="facebook">
-					</a>
-				</li>
-				<li class="logosredes1">
-					<a href="https://www.instagram.com/sweetveganbakery/"><img class="logosredes" src="multimedia/logoig.png" alt="instagram">
-					</a>
-				</li>
-			</ul>
+		<div class="container-fluid">
+			<section id="logoredesdiv">
+				<ul>
+					<li class="logosredes1 animate__animated animate__bounceInDown">
+						<a href="https://www.facebook.com/agus.sirii/"><img class="logosredes" src="multimedia/logosredes.png" alt="facebook">
+						</a>
+					</li>
+					<li class="logosredes1 animate__animated animate__bounceInDown">
+						<a href="https://www.instagram.com/sweetveganbakery/"><img class="logosredes" src="multimedia/logoig.png" alt="instagram">
+						</a>
+					</li>
+			
+				</ul>
+			</section> 
 		</div>
-		<div>
-			<div class="menuuno">
-				<nav class="navbar navbar-expand-sm navbar-expand-lg navbar-dark bg-black">
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="navigation">
+		<div class="menuDos">
+			<nav class="navbar navbar-expand-sm navbar-expand-lg navbar-dark bg-black">
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="navigation">
 					   
-					  <span class="navbar-toggler-icon "></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" href="index.html">Inicio</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link active" href="nosotros.html">Nosotros</a>
-							</li>
+				  <span class="navbar-toggler-icon "></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link active" href="nosotros.html">Nosotros</a>
+						</li>
 							
-							<li class="nav-item">
-								<a class="nav-link active" href="menu.html">Productos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="Locales.html">Locales</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="contacto.html">Contacto</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
+						<li class="nav-item">
+							<a class="nav-link active" href="menu.html">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="Locales.html">Locales</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div> 
 	</header>
 
-	<section id="nosotros" class="acenter">
-		<div class="title">
+	<main id="nosotros" class="acenter">
+		<div class="container-fluid">
+		<div class="title animate__animated animate__backInLeft">
 			<h1>
-				Sobre Nosotros
+				Conocé acerca de Nosotros
 			</h1>
+			<p class="phrase">“El amor por todas las criaturas vivientes es el más noble atributo del hombre”</p>
+			<p class="author">-Charles Darwin-</p>
 		</div>
-		<div class="infonosotros">
-			<img src="multimedia/nosotros.png" alt="Nosotros">
-			<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odio ab nisi, quis exercitationem, esse voluptatum quia magnam veniam nemo architecto modi ex dicta itaque autem, assumenda deleniti, explicabo tempore.</p>
+		</div>
+	</main>
+
+	<section class="infoNosotros">
+		<div class="container-fluid">
+			<div class="row">
+				<h2 class="animate__animated animate__backInLeft">Historia-</h2>
+				<div class="col-lg-4  col-md-12 col-12">
+					<p class="animate__animated animate__backInLeft"><strong>Sweet Vegan Bakery</strong>  nació en el año 2015, en la ciudad de Wilde, Provincia de Buenos Aires. 
+						Comenzó como un emprendimiento familiar a través de las redes sociales, y poco a poco, gracias al apoyo 
+						principalmente de nuestros amigos y familiares, el negocio fue creciendo y tomando mayor alcance. 
+						Un año después abrimos nuestro primer local en el centro comercial de la ciudad, al día de 
+						hoy afortunadamente ya llegamos a muchos rincones de Zona Sur!. Conocé más en -<a class="conoceMas" href="Locales.html">locales</a>-.
+					</p>
+				</div>
+				<div class="animate__animated animate__backInRight imgNosotros col-lg-4 col-md-6 col-12">
+					<img class="historia1 img-fluid" src="multimedia/historiaSweet.jpg" alt="ImgHistoria">
+					<div class="texto-encima">Planificando SweetVB</div>
+				</div>
+				<div class="animate__animated animate__backInRight imgNosotros col-lg-4 col-md-6 col-12">
+					<img class="historia2 img-fluid" src="multimedia/historiaSweet2.jpg" alt="ImgHistoria">
+					<div class="texto-encima">Primer local</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<h2 class="animate__animated animate__backInLeft">Misión y Valores-</h2>
+				<div class="col-lg-6 col-md-12 col-12">
+					<p class="animate__animated animate__backInLeft"> Nos apasiona la comida rica y casera! También nos moviliza el cuidado por nuestro planeta y todos los seres vivos.
+						Es por eso que elegimos materias primas de primera calidad y de origen vegetal. Al mismo tiempo creemos que para generar cambios es necesario comunicar 
+						desde el amor y el respeto.	La imagen de la marca no busca destacarse por ser vegana, el foco está en llegar a todo público y así demostrar que consumir 
+						productos veganos puede ser una experiencia emocionante y sabrosa. Mirá que pinta -<a  class="conoceMas" href="menu.html">productos</a>-.
+					</p>
+				</div>
+				<div class="animate__animated animate__backInRight imgNosotros col-lg-6 col-md-6 col-12">
+					<img class="historia3 img-fluid" src="multimedia/nosotros.png" alt="ImgNosotros">
+					<div class="texto-encima">Fundadores</div>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
 	<footer class="footer-distributed">
- 
-		<div class="footer-left">
-			<h3>SweetVegan<span>Bakery</span></h3>
-			<p class="footer-links">
-				<a href="index.html">Inicio</a>
-				<a href="nosotros.html">Nosotros</a>
-				<a href="menu.html">Productos</a>
-				<a href="Locales.html">Locales</a>
-				<a href="novedades.html">Novedades</a>
-				<a href="contacto.html">Contacto</a>
-			</p>
-			<p class="footer-company-name">SweetVeganBakery &copy; 2020</p>
-		</div>
-	
-		<div class="footer-center">
-			<div>
-				<i class="fa fa-map-marker"></i>
-				<p><span>Las flores 204, Wilde.</span> Buenos Aires, Argentina</p>
-			</div>
-		
-			<div>
-				<i class="fa fa-phone"></i>
-				<p>+54 9 1141612451</p>
-			</div>
-		
-			<div>
-				<i class="fa fa-envelope"></i>
-				<p><a href="mailto:support@company.com">sweetvbakery@gmail.com</a></p>
-			</div>
-	
-		</div>
-	
-		<div class="footer-right">
-			<p class="footer-company-about">
-				<span>Acerca de Sweet Vegan Bakery</span>
-				Panadería y pastelería de productos Cruelty Free. Fundada en 2015.
-			</p>
-		
-			<div class="footer-icons">
-				<a href="https://www.facebook.com/agus.sirii/">
-					<img class="logosredes" src="multimedia/facebook.png" alt="facebook">
-					<i class="fa fa-facebook"></i>
-				</a>
-				<a href="https://www.instagram.com/sweetveganbakery/">
-					<img class="logosredes" src="multimedia/instagram-bosquejado.png" alt="instagram">
-					<i class="fa fa-instagram"></i>
-				</a>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-12 footer-left">
+					<h3>SweetVegan<span>Bakery</span></h3>
+					<p class="footer-links">
+						<a href="index.html">Inicio</a>
+						<a href="nosotros.html">Nosotros</a>
+						<a href="menu.html">Productos</a>
+						<a href="Locales.html">Locales</a>
+						<a href="contacto.html">Contacto</a>
+					</p>
+					<p class="footer-company-name">SweetVeganBakery &copy; 2020</p>
+				</div>
+			
+				<div class="col-lg-4 col-md-6 col-12 footer-center">
+					<div>
+						<i class="fa fa-map-marker"></i>
+						<p><span>Las flores 204, Wilde.</span> Buenos Aires, Argentina</p>
+					</div>
+				
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+54 9 1141612451</p>
+					</div>
+				
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:support@company.com">sweetvbakery@gmail.com</a></p>
+					</div>
+			
+				</div>
+			
+				<div class="col-lg-4 col-md-6 col-12 footer-right">
+					<p class="footer-company-about">
+						<span>Acerca de Sweet Vegan Bakery</span>
+						Panadería y pastelería de productos Cruelty Free. Fundada en 2015.
+					</p>
+				
+					<div class="footer-icons">
+						<a href="https://www.facebook.com/agus.sirii/">
+							<img class="logosredes" src="multimedia/facebook.png" alt="facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/sweetveganbakery/">
+							<img class="logosredes" src="multimedia/instagram-bosquejado.png" alt="instagram">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
