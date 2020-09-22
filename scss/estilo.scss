@@ -956,9 +956,11 @@ footer {
 		/***BIENVENIDOS***/
 	
         .bienvenidos {
+			margin-right: 20%;
+			margin-left: 20%;
             .logo{
                 img {
-                    top: 80px;
+                    top: 50px;
                     width: 150px;
                     height: 150px;
                     &:hover {
@@ -972,10 +974,8 @@ footer {
             }
             .fraseprincipal {
                 h1 {
-                    margin-left: 300px;
-                    margin-right: 300px;
                     font-size: 90px;
-                    margin-top: 100px;
+                    margin-top: 15%;
                 }
             }
         }

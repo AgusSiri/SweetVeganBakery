@@ -697,19 +697,20 @@ footer {
       width: 32px;
       height: 32px; }
   /***BIENVENIDOS***/
-  .bienvenidos .logo img {
-    top: 80px;
-    width: 150px;
-    height: 150px; }
-    .bienvenidos .logo img:hover {
-      width: 180px;
-      height: 180px;
-      transition: all .3s; }
-  .bienvenidos .fraseprincipal h1 {
-    margin-left: 300px;
-    margin-right: 300px;
-    font-size: 90px;
-    margin-top: 100px; }
+  .bienvenidos {
+    margin-right: 20%;
+    margin-left: 20%; }
+    .bienvenidos .logo img {
+      top: 50px;
+      width: 150px;
+      height: 150px; }
+      .bienvenidos .logo img:hover {
+        width: 180px;
+        height: 180px;
+        transition: all .3s; }
+    .bienvenidos .fraseprincipal h1 {
+      font-size: 90px;
+      margin-top: 15%; }
   .parrafoempresa .infoempresa p {
     margin-top: 70px;
     font-size: 30px;
