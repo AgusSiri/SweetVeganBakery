@@ -364,8 +364,6 @@ a {
     color: white;
     text-align: center;
     text-shadow: 4px 4px 4px black; }
-    .bloque-direccion p:hover {
-      font-size: 22px; }
   .bloque-direccion h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
