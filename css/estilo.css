@@ -23,14 +23,22 @@ a {
   color: #d9aaaa;
   text-shadow: 1px 1px 1px white;
   font-size: 35px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 10px; }
+
+.titleProductos h1 {
+  font-family: "Dancing Script", cursive;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 .titleLocales h1 {
   font-family: "Dancing Script", cursive;
   color: white;
   text-shadow: 2px 2px 2px black;
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 40px;
   margin-bottom: 40px; }
 
@@ -106,7 +114,7 @@ a {
       transition: all .2s; }
       .menuUno #navbarNav ul li a:hover {
         color: grey;
-        font-size: 22px; }
+        font-size: 19px; }
 
 .menuDos {
   display: flex;
@@ -125,7 +133,7 @@ a {
       transition: all .2s; }
       .menuDos #navbarNav ul li a:hover {
         color: grey;
-        font-size: 22px; }
+        font-size: 19px; }
 
 /***BIENVENIDOS***/
 #videofondo video {
@@ -541,12 +549,21 @@ footer {
 @media (min-width: 576px) and (max-width: 767px) {
   /***GENERALES***/
   .title h1 {
-    font-family: "Dancing Script", cursive;
-    color: #d9aaaa;
-    text-shadow: 1px 1px 1px white;
+    font-size: 40px;
+    margin-top: 40px; }
+  .titleLocales h1 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
     font-size: 40px;
     margin-top: 40px;
-    margin-bottom: 10px; }
+    margin-bottom: 40px; }
+  .titleProductos h1 {
+    font-family: "Dancing Script", cursive;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
   /***BIENVENIDOS***/
   .bienvenidos .logo img {
     margin-top: 20px;
@@ -575,29 +592,21 @@ footer {
 @media (min-width: 768px) and (max-width: 1199px) {
   /***GENERALES***/
   .title h1 {
-    font-family: "Dancing Script", cursive;
-    color: #d9aaaa;
-    text-shadow: 3px 3px 3px white;
     font-size: 60px;
-    margin-top: 15px;
-    margin-bottom: 50px; }
-    .title h1:hover {
-      color: black;
-      transition: all .3s;
-      font-size: 70px;
-      background-color: rgba(255, 255, 255, 0.7); }
+    margin-top: 45px; }
   .titleLocales h1 {
-    font-family: "Dancing Script", cursive;
-    color: #d9aaaa;
-    text-shadow: 3px 3px 3px white;
+    color: white;
+    text-shadow: 2px 2px 2px black;
     font-size: 60px;
-    margin-top: 15px;
-    margin-bottom: 50px; }
-    .titleLocales h1:hover {
-      color: black;
-      transition: all .3s;
-      font-size: 70px;
-      background-color: rgba(255, 255, 255, 0.7); }
+    margin-top: 45px;
+    margin-bottom: 40px; }
+  .titleProductos h1 {
+    font-family: "Dancing Script", cursive;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-size: 60px;
+    margin-top: 45px;
+    margin-bottom: 40px; }
   /***BIENVENIDOS***/
   .bienvenidos .logo img {
     margin-top: 40px;
@@ -681,25 +690,34 @@ footer {
     font-family: "Dancing Script", cursive;
     color: #d9aaaa;
     text-shadow: 3px 3px 3px white;
-    font-size: 60px;
-    margin-top: 15px;
+    font-size: 70px;
+    margin-top: 80px;
     margin-bottom: 50px; }
     .title h1:hover {
       color: black;
       transition: all .3s;
-      font-size: 70px;
+      font-size: 90px;
       background-color: rgba(255, 255, 255, 0.7); }
   .titleLocales h1 {
     font-family: "Dancing Script", cursive;
     color: #d9aaaa;
     text-shadow: 3px 3px 3px white;
-    font-size: 60px;
-    margin-top: 15px;
+    font-size: 70px;
+    margin-top: 80px;
     margin-bottom: 50px; }
     .titleLocales h1:hover {
       color: black;
       transition: all .3s;
-      font-size: 70px;
+      font-size: 90px;
+      background-color: rgba(255, 255, 255, 0.7); }
+  .titleProductos h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    margin-bottom: 50px; }
+    .titleProductos h1:hover {
+      color: black;
+      transition: all .3s;
+      font-size: 90px;
       background-color: rgba(255, 255, 255, 0.7); }
   /***BODY***/
   .bodyproductos {
