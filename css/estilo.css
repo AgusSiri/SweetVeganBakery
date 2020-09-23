@@ -334,7 +334,7 @@ a {
     .producto-texto h2:hover {
       color: black;
       background-color: #d9aaaa;
-      transition: all .2s;
+      transition: all .3s;
       font-size: 24px; }
   .producto-texto li {
     font-family: "EB Garamond", serif;
@@ -343,7 +343,7 @@ a {
     text-align: left; }
     .producto-texto li:hover {
       background-color: #fc9d9d;
-      transition: all .2s;
+      transition: all .3s;
       font-size: 20px; }
 
 /***LOCALES***/
@@ -355,6 +355,8 @@ a {
   padding-bottom: 0%;
   margin-bottom: 70px;
   vertical-align: middle; }
+  .bloque-direccion:hover {
+    background-color: rgba(0, 0, 0, 0.7); }
   .bloque-direccion p {
     font-family: "EB Garamond", serif;
     font-size: 20px;
@@ -362,6 +364,8 @@ a {
     color: white;
     text-align: center;
     text-shadow: 4px 4px 4px black; }
+    .bloque-direccion p:hover {
+      font-size: 22px; }
   .bloque-direccion h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;

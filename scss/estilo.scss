@@ -437,7 +437,7 @@ a {
 		&:hover {
 			color: black;
 			background-color: $brown;
-			transition: all .2s;
+			transition: all .3s;
 			font-size: 24px;
 		}
 	}
@@ -448,7 +448,7 @@ a {
 		text-align: left;
 		&:hover {
 			background-color: $pink;
-			transition: all .2s;
+			transition: all .3s;
 			font-size: 20px;
 		}
 	}
@@ -465,12 +465,18 @@ a {
 	padding-bottom: 0%;
 	margin-bottom: 70px;
 	vertical-align: middle;
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
 	p{	font-family: $text-font;
 		font-size: 20px;
 		font-style: bold;
 		color: white;
 		text-align: center;
 		text-shadow: 4px 4px 4px black;
+		&:hover {
+			font-size: 22px;
+		}
 	}
 	h2{
 		font-family: $nav-font;
