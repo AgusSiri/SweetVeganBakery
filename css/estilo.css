@@ -190,7 +190,7 @@ a {
       letter-spacing: 1px;
       font-family: "Open Sans", sans-serif; }
       .bienvenidos .descargamenu .descarga a:hover {
-        color: #d9aaaa;
+        color: black;
         transition: all .3s; }
 
 .parrafoempresa {
@@ -503,7 +503,7 @@ footer {
     padding: 0; }
     .footer-distributed .footer-links a {
       display: inline-block;
-      line-height: 1.8;
+      line-height: 3px;
       text-decoration: none;
       color: inherit; }
       .footer-distributed .footer-links a:hover {
@@ -807,53 +807,58 @@ footer {
       .infoNosotros p strong {
         font-style: italic;
         font-size: 21px; }
-      .infoNosotros p .conoceMas {
-        text-decoration: none;
-        color: white; }
-        .infoNosotros p .conoceMas:hover {
-          color: #fc9d9d;
-          transition: all .3s;
-          font-size: 24px; }
-    .infoNosotros .imgNosotros {
-      position: relative;
-      display: inline-block; }
-      .infoNosotros .imgNosotros img {
-        padding: 10%; }
-      .infoNosotros .imgNosotros .texto-encima {
-        text-align: left;
-        position: absolute;
-        color: #d9aaaa;
-        font-family: "Open Sans", sans-serif;
-        font-size: 80%;
-        top: 80%;
-        left: 20%; }
-        .infoNosotros .imgNosotros .texto-encima:hover {
-          color: black;
-          transition: all .3s;
-          font-size: 100%;
-          background-color: rgba(255, 255, 255, 0.7); }
-  /***PRODUCTOS***/
-  .only-responsive {
-    display: none; }
-  .only-desktop {
-    display: inherit; }
-  .producto-texto {
-    padding-top: 8%; }
-  /***CONTACTO***/
-  .contacto h1 {
-    color: #d9aaaa;
-    font-size: 60px;
-    font-family: "Dancing Script", cursive;
-    text-shadow: 2px 2px 2px black;
-    text-align: center;
-    width: 1000px;
-    margin: 10px auto;
-    padding: 20px 20px; }
-  form {
-    width: 50%;
-    padding: 20px;
-    margin-top: 20px; }
-    form legend {
-      font-size: 30px; }
-    form label {
-      font-size: 20px; } }
+    .infoNosotros .conoceMas {
+      text-decoration: none;
+      color: white; }
+      .infoNosotros .conoceMas:hover {
+        color: #fc9d9d;
+        transition: all .3s;
+        font-size: 24px; }
+  .imgNosotros {
+    position: relative;
+    display: inline-block; }
+    .imgNosotros img {
+      padding: 10%; }
+    .imgNosotros .texto-encima {
+      text-align: left;
+      position: absolute;
+      color: #d9aaaa;
+      font-family: "Open Sans", sans-serif;
+      font-size: 80%;
+      top: 80%;
+      left: 20%; }
+      .imgNosotros .texto-encima:hover {
+        color: black;
+        transition: all .3s;
+        font-size: 100%;
+        background-color: rgba(255, 255, 255, 0.7); } }
+
+/***PRODUCTOS***/
+.only-responsive {
+  display: none; }
+
+.only-desktop {
+  display: inherit; }
+
+.producto-texto {
+  padding-top: 8%; }
+
+/***CONTACTO***/
+.contacto h1 {
+  color: #d9aaaa;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  width: 1000px;
+  margin: 10px auto;
+  padding: 20px 20px; }
+
+form {
+  width: 50%;
+  padding: 20px;
+  margin-top: 20px; }
+  form legend {
+    font-size: 30px; }
+  form label {
+    font-size: 20px; }

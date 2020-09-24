@@ -260,7 +260,7 @@ a {
 				letter-spacing: 1px;
 				font-family: $nav-font;
 				&:hover {
-					color: $brown;
+					color: $black;
 					transition: all .3s;
 				}
 			}
@@ -559,11 +559,11 @@ form input[type="submit"]{
 	display:block;
 	color:#fff;
 	background-color: $pink;
-   } 
+} 
    
 form input[type="submit"]:hover{
    cursor:pointer;
-   }
+}
    
 textarea{
 	width:100%;
@@ -639,7 +639,7 @@ footer {
 		padding: 0;
 		a {
 			display: inline-block;
-			line-height: 1.8;
+			line-height: 3px;
 			text-decoration: none;
 			color: inherit;
 			&:hover {	
@@ -777,10 +777,10 @@ footer {
 		}
 	}
 
-	}
+}
 	
-	// Medium devices
-	@media (min-width: 768px) and (max-width: 1199px) {
+// Medium devices
+@media (min-width: 768px) and (max-width: 1199px) {
 	
 	/***GENERALES***/
 	
@@ -931,85 +931,85 @@ footer {
 		}
 	}
 
+}
+	
+	
+	
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.title {
+		h1 {
+			font-family: $title-font;
+			color: $brown;
+			text-shadow: 3px 3px 3px white;
+			font-size: 70px;
+			margin-top: 80px;
+			margin-bottom: 70px;
+			&:hover {
+				color: black;
+				transition: all .6s;
+				font-size: 85px;
+				background-color: rgba(255, 255, 255, 0.7);
+			}
+		}
 	}
 	
-	
-	
-	// Extra large devices (large desktops, 1200px and up)
-	@media (min-width: 1200px) {
-		.title {
-			h1 {
-				font-family: $title-font;
-				color: $brown;
-				text-shadow: 3px 3px 3px white;
-				font-size: 70px;
-				margin-top: 80px;
-				margin-bottom: 70px;
-				&:hover {
-					color: black;
-					transition: all .6s;
-					font-size: 85px;
-					background-color: rgba(255, 255, 255, 0.7);
-				}
+	.titleLocales {
+		h1{
+			font-family: $title-font;
+			color: $brown;
+			text-shadow: 3px 3px 3px white;
+			font-size: 70px;
+			margin-top: 80px;
+			margin-bottom: 70px;
+			&:hover {
+				color: black;
+				transition: all .6s;
+				font-size: 85px;
+				background-color: rgba(255, 255, 255, 0.7);
 			}
 		}
-	
-		.titleLocales {
-			h1{
-				font-family: $title-font;
-				color: $brown;
-				text-shadow: 3px 3px 3px white;
-				font-size: 70px;
-				margin-top: 80px;
-				margin-bottom: 70px;
-				&:hover {
-					color: black;
-					transition: all .6s;
-					font-size: 85px;
-					background-color: rgba(255, 255, 255, 0.7);
-				}
-			}
-		}
+	}
 
-		.titleProductos {
-			h1 {
-				font-size: 70px;
-				margin-top: 80px;
-				margin-bottom: 70px;
-				&:hover {
-					color: black;
-					transition: all .6s;
-					font-size: 85px;
-					background-color: rgba(255, 255, 255, 0.7);
-				}
+	.titleProductos {
+		h1 {
+			font-size: 70px;
+			margin-top: 80px;
+			margin-bottom: 70px;
+			&:hover {
+				color: black;
+				transition: all .6s;
+				font-size: 85px;
+				background-color: rgba(255, 255, 255, 0.7);
 			}
 		}
+	}
 
-		/***BODY***/
-		.bodyproductos {
-			background-color: white;
-			background-image: url(../multimedia/fondo.png);
-		}
-		.bodyLocales {
-			background-image: url(../multimedia/bakeryBackground.jpg);
-			background-size:100% 100%;
-			margin: 0;
-			padding: 0;
-			background-repeat: repeat;
-		}
+	/***BODY***/
+	.bodyproductos {
+		background-color: white;
+		background-image: url(../multimedia/fondo.png);
+	}
+	.bodyLocales {
+		background-image: url(../multimedia/bakeryBackground.jpg);
+		background-size:100% 100%;
+		margin: 0;
+		padding: 0;
+		background-repeat: repeat;
+	}
 	
-		.bodynosotros {
-			background-size:100% 100%;
-		}
+	.bodynosotros {
+		background-size:100% 100%;
+	}
 	/***SECTIONREDES***/
 
 	#logoredesdiv {
-			.logosredes1 {
+		.logosredes1 {
 			img {
 				width: 22px;
 				height: 22px;	
 				margin-left: 2px;
-					&:hover {
+				&:hover {
 					width: 32px;
 					height: 32px;
 				}
@@ -1020,109 +1020,108 @@ footer {
 
 	/***BIENVENIDOS***/
 	
-        .bienvenidos {
-			margin-right: 20%;
-			margin-left: 20%;
-            .logo{
-                img {
-                    top: 50px;
-                    width: 150px;
-                    height: 150px;
-                    &:hover {
-                        width: 180px;
-                        height: 180px;
-                        transition: all .3s;
-                
-                    }
-                }
-        
-            }
-            .fraseprincipal {
-                h1 {
-                    font-size: 90px;
-					margin-top: 15%;
-					margin-bottom: 8%;
-                }
-            }
+    .bienvenidos {
+		margin-right: 20%;
+		margin-left: 20%;
+       .logo{
+            img {
+				top: 50px;
+           		width: 150px;
+            	height: 150px;
+               &:hover {
+                	width: 180px;
+	         		height: 180px;
+        	    	transition: all .3s;               
+               	}
+            }    
         }
-        .parrafoempresa {
-        
-            .infoempresa {
-                p {
-                margin-top: 70px;
-                font-size: 30px;
-                margin-right: 200px;
-                margin-left: 200px;
-                }
-                img {
-                    width: 200px;
-                    height: 200px;
-                    &:hover {
-                        width: 250px;
-                        height: 250px;
-                    }
-
-                }
-            }
-        }
-	/***NOSOTROS***/
-		.title {
-			.phrase {		
-				font-size: 30px;
-				&:hover {
-					font-size: 40px;
-					color: $pink;
-				}
-			
-			}
-			.author {
-				font-size: 25px;
-				margin-bottom: 40px;
+        .fraseprincipal {
+            h1 {
+               font-size: 90px;
+				margin-top: 15%;
+				margin-bottom: 8%;
 			}
 		}
-		.infoNosotros {
-			width: 100%;
-			background-color: rgba(255, 255, 255, 0.7);
-			position: relative;
-			display: inline-block;
-			h2{
-				font-family: $title-font;
-				font-size: 30px;
-				margin-left: 5%;
-				margin-right: 70%;
-				margin-top: 2%;
-				text-align: left;
-				color: black;
-				&:hover {
-					color: white;
-					transition: all .3s;
-					font-size: 35px;
-				}	
+    }
+    .parrafoempresa {
+        
+        .infoempresa {
+           p {
+			   margin-top: 70px;
+	          font-size: 30px;
+                margin-right: 200px;
+                margin-left: 200px;
+    	    }
+            img {
+                width: 200px;
+	        	height: 200px;
+                &:hover {
+                    width: 250px;
+                    height: 250px;
+                }
+
+            }
+		}
+    }
+	/***NOSOTROS***/
+	.title {	
+		.phrase {		
+			font-size: 30px;
+			&:hover {
+				font-size: 40px;
+				color: $pink;
 			}
-			p {
-				margin-top: 10%;
-				text-align: left;
-				font-family: $text-font;
-				font-size: 20px;
-				margin-left: 35px;
-				margin-right: 5px;
+			
+		}
+		.author {
+			font-size: 25px;
+			margin-bottom: 40px;
+		}
+	}
+	.infoNosotros {
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.7);
+		position: relative;
+		display: inline-block;
+		h2{
+			font-family: $title-font;
+			font-size: 30px;
+			margin-left: 5%;
+			margin-right: 70%;
+			margin-top: 2%;
+			text-align: left;
+			color: black;
+			&:hover {
+				color: white;
+				transition: all .3s;
+				font-size: 35px;
+			}	
+		}
+		p {
+			margin-top: 10%;
+			text-align: left;
+			font-family: $text-font;
+			font-size: 20px;
+			margin-left: 35px;
+			margin-right: 5px;
 				strong {
-					font-style: italic;
-					font-size: 21px;
-				}
-				.conoceMas {
-					text-decoration: none;
-					color: white;
-					&:hover {
-						color: $pink;
-						transition: all .3s;
-						font-size: 24px;
-					}	
-				}
+				font-style: italic;
+				font-size: 21px;
 			}
-		.imgNosotros {
-			position: relative;
-			display: inline-block;
+		}
+		.conoceMas {
+			text-decoration: none;
+			color: white;
+			&:hover {
+				color: $pink;
+				transition: all .3s;
+				font-size: 24px;
+			}	
+		}
+	}
+	.imgNosotros {
+		position: relative;
+		display: inline-block;
 			img {
 				padding: 10%;
 			}
@@ -1143,41 +1142,40 @@ footer {
 	
 			}
 		}
-		}
-		/***PRODUCTOS***/
-		.only-responsive {
-			display: none;
-		}
+	}
+	/***PRODUCTOS***/
+	.only-responsive {
+		display: none;
+	}
 		
-		.only-desktop {
-			display: inherit;
-		}
-		.producto-texto {	
-			padding-top: 8%;
-		}
-		/***CONTACTO***/
+	.only-desktop {
+		display: inherit;
+	}
+	.producto-texto {	
+		padding-top: 8%;
+	}
+	/***CONTACTO***/
 
-		.contacto {
-			h1 {
-				color: $brown;
-				font-size: 60px;
-				font-family: $title-font;
-				text-shadow: 2px 2px 2px $black;
-				text-align: center;
-				width: 1000px;
-				margin: 10px auto;
-				padding: 20px 20px;
-			}
-		}
-		form{
-			width: 50%;
-			padding:20px;
-			margin-top: 20px;
-			legend{
-				font-size: 30px;
-			}
-			label{
-				font-size: 20px;
-			}
+	.contacto {
+		h1 {
+			color: $brown;
+			font-size: 60px;
+			font-family: $title-font;
+			text-shadow: 2px 2px 2px $black;
+			text-align: center;
+			width: 1000px;
+			margin: 10px auto;
+			padding: 20px 20px;
 		}
 	}
+	form{
+		width: 50%;
+		padding:20px;
+		margin-top: 20px;
+		legend{
+			font-size: 30px;
+		}
+	label{
+			font-size: 20px;
+	}
+}
