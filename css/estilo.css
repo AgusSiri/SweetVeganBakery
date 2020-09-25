@@ -408,6 +408,8 @@ form {
     font-size: 22px; }
     form legend b {
       color: #53B7D2; }
+      form legend b:hover {
+        color: white; }
   form label {
     width: 200px;
     font-weight: bold;
@@ -415,6 +417,8 @@ form {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     display: inline-block; }
+    form label:hover {
+      color: white; }
 
 form input[type="text"], form input[type="email"] {
   width: 180px;
@@ -434,9 +438,9 @@ form input[type="submit"] {
   display: block;
   color: #fff;
   background-color: #fc9d9d; }
-
-form input[type="submit"]:hover {
-  cursor: pointer; }
+  form input[type="submit"]:hover {
+    cursor: pointer;
+    color: black; }
 
 textarea {
   width: 100%;
@@ -562,7 +566,6 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px; }
   .titleProductos h1 {
-    font-family: "Dancing Script", cursive;
     color: black;
     text-shadow: 2px 2px 2px white;
     font-size: 40px;
@@ -639,7 +642,6 @@ footer {
     height: 150px; }
   /***NOSOTROS***/
   .infoNosotros h2 {
-    font-family: "Dancing Script", cursive;
     font-size: 25px;
     margin-left: 25px;
     margin-right: 80%;
@@ -647,7 +649,6 @@ footer {
     color: black; }
   .infoNosotros p {
     margin-top: 5%;
-    font-family: "EB Garamond", serif;
     font-size: 18px;
     margin-left: 20px;
     margin-right: 20px; }
@@ -851,7 +852,6 @@ footer {
   .contacto h1 {
     color: #d9aaaa;
     font-size: 60px;
-    font-family: "Dancing Script", cursive;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     width: 1000px;

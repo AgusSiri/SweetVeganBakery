@@ -527,6 +527,9 @@ form{
 		font-size: 22px;
 		b {
 			color: $babyblue;
+			&:hover {
+				color: white;
+			}
 		}
 	}
 	label{
@@ -536,6 +539,9 @@ form{
 		font-family: $nav-font;
 		font-size: 15px;
 		display:inline-block;
+		&:hover {
+			color: white;
+		}
 	}
 }
    
@@ -558,11 +564,11 @@ form input[type="submit"]{
 	display:block;
 	color:#fff;
 	background-color: $pink;
+	&:hover {
+		cursor:pointer;
+   		color: $black;
+	}
 } 
-   
-form input[type="submit"]:hover{
-   cursor:pointer;
-}
    
 textarea{
 	width:100%;
@@ -720,7 +726,6 @@ footer {
 	}
 	.titleProductos {
 		h1{
-		font-family: $title-font;
 		color: black;
 		text-shadow: 2px 2px 2px white;
 		font-size: 40px;
@@ -866,7 +871,6 @@ footer {
 	.infoNosotros {
 
 		h2{
-			font-family: $title-font;
 			font-size: 25px;
 			margin-left: 25px;
 			margin-right: 80%;
@@ -875,7 +879,6 @@ footer {
 		}
 		p {
 			margin-top: 5%;
-			font-family: $text-font;
 			font-size: 18px;
 			margin-left: 20px;
 			margin-right: 20px;
@@ -1178,7 +1181,6 @@ footer {
 		h1 {
 			color: $brown;
 			font-size: 60px;
-			font-family: $title-font;
 			text-shadow: 2px 2px 2px $black;
 			text-align: center;
 			width: 1000px;
