@@ -682,9 +682,9 @@ footer {
     margin: 10px auto;
     padding: 20px 20px; }
   form {
-    width: 50%;
+    width: 60%;
     padding: 20px;
-    margin-top: 20px; }
+    margin-top: 5%; }
     form legend {
       font-size: 25px; }
     form label {
@@ -831,34 +831,32 @@ footer {
         color: black;
         transition: all .3s;
         font-size: 100%;
-        background-color: rgba(255, 255, 255, 0.7); } }
-
-/***PRODUCTOS***/
-.only-responsive {
-  display: none; }
-
-.only-desktop {
-  display: inherit; }
-
-.producto-texto {
-  padding-top: 8%; }
-
-/***CONTACTO***/
-.contacto h1 {
-  color: #d9aaaa;
-  font-size: 60px;
-  font-family: "Dancing Script", cursive;
-  text-shadow: 2px 2px 2px black;
-  text-align: center;
-  width: 1000px;
-  margin: 10px auto;
-  padding: 20px 20px; }
-
-form {
-  width: 50%;
-  padding: 20px;
-  margin-top: 20px; }
-  form legend {
-    font-size: 30px; }
-  form label {
-    font-size: 20px; }
+        background-color: rgba(255, 255, 255, 0.7); }
+  /***PRODUCTOS***/
+  .only-responsive {
+    display: none; }
+  .only-desktop {
+    display: inherit; }
+  .producto-texto {
+    padding-top: 8%; }
+  /***CONTACTO***/
+  .contacto h1 {
+    color: #d9aaaa;
+    font-size: 60px;
+    font-family: "Dancing Script", cursive;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    width: 1000px;
+    margin: 10px auto;
+    padding: 20px 20px; }
+  form {
+    width: 50%;
+    padding: 26px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 60px; }
+    form legend {
+      font-size: 30px; }
+    form label {
+      width: 200px;
+      font-size: 20px; } }
